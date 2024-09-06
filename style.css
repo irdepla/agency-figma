@@ -108,13 +108,29 @@ a {
 
 .hero__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  column-gap: 24px;
 }
+
+
 
 .hero__title {
   font-size: 72px;
   font-weight: 800;
   line-height: 80px;
   letter-spacing: -2px;
+  color: var(--main--text);
+  text-align: center;
+}
+
+.hero__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #ffffffa3;
+  margin-top: 24px;
+  margin-bottom: 66px;
+  text-align: center;
 }
