@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+body{
+    background: var(--main--bg);
+}
+
 :root {
   --hero--bg: #28293e;
   --main--text: #fff;
@@ -114,8 +118,6 @@ a {
   column-gap: 24px;
 }
 
-
-
 .hero__title {
   font-size: 72px;
   font-weight: 800;
@@ -133,4 +135,208 @@ a {
   margin-top: 24px;
   margin-bottom: 66px;
   text-align: center;
+}
+
+/* Portfolio navigation section styles */
+
+.portfolio__navigation {
+  margin-top: 68px;
+}
+
+.portfolio__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.portfolio__navigation__container {
+  display: flex;
+  gap: 60px;
+}
+
+.portfolio__navigation__link {
+  position: relative;
+  padding: 20px 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--descryption--text);
+  border: 2px solid red;
+  transition: 0.5s;
+}
+
+.portfolio__navigation__link:first-child {
+  color: var(--important--text);
+}
+
+.portfolio__navigation__link:first-child sup {
+  color: var(--descryption--text);
+}
+
+.portfolio__navigation__link:hover {
+  border: 2px solid red;
+}
+
+.portfolio__navigation__link::before {
+  content: " ";
+  position: absolute;
+  inset: 0 8px;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  transition: 1s;
+}
+
+.portfolio__navigation__link::after {
+  content: " ";
+  position: absolute;
+  inset: 8px 0;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  transition: 1s;
+}
+
+.portfolio__navigation__link:hover::before {
+  inset: 16px 8px;
+}
+
+.portfolio__navigation__link:hover::after {
+  inset: 8px 16px;
+}
+
+/* Portfolio card section styles */
+
+.portfolio___card__section {
+  margin-top: 68px;
+}
+
+.portfolio__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.portfolio__card {
+  height: 416px;
+  background-image: url(./images/sofa.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 48px;
+  padding-bottom: 51px;
+  transition: all 1s ease-in-out;
+}
+
+
+
+
+
+.portfolio__card:hover {
+    transform: scale(1.099);
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+  }
+
+
+  .portfolio__card__title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    color: var(--main--text);
+    margin-top: 23px;
+  }
+  
+  .portfolio__card__btn {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--important--text);
+    background-color: var(--main--text);
+    padding: 5px 16px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  
+  .portfolio__card__btn:hover::after {
+    content: "→";
+    color: var(--important--text);
+  }
+
+  .keyboard__card{
+    background-image: url(./images/keyboard.png);
+  }
+
+  .keyboard__card button:hover::after {
+    content: "🔜";
+  }
+
+  .workmedia__card{
+    background-image: url(./images/work\ media.png);
+  }
+
+  .dddone__card{
+    background-image: url(./images/dddone.png);
+  }
+
+
+
+  .sofa__card button:hover::after {
+    content: "🔝";
+  }
+
+
+  .abstract__card{
+    background-image: url(./images/abstarct.png);
+  }
+
+  .handp__card{
+    background-image: url(./images/handp.png);
+  }
+
+  .architect__card{
+    background-image: url(./images/architect.png);
+  }
+
+  .calc__card{
+    background-image: url(./images/calc.png);
+  }
+
+  .sport__card{
+    background-image: url(./images/sport.png);
+  }
+
+
+  .architect__card button:hover::after {
+    content: "🔝";
+  }
+  .sport__card button:hover::after {
+    content: "🔝";
+  }
+
+
+  .handp__card button:hover::after {
+    content: "🔜";
+  }
+
+
+
+  .dddone__card button:hover::after {
+    content: "🔜";
+  }
+
+
+.load-more__btn{
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    background: transparent;
+    box-shadow: 0px 3px 9px 0px #39140014;
+    color: var(--important--text);
+}
+  
+
+.load-more__btn:hover{
+    
 }
