@@ -463,6 +463,9 @@ a {
   line-height: 32px;
   color: var(--descryption--text);
 }
+.block__text{
+  display: none;
+}
 
 .footer__terms {
   display: flex;
@@ -590,7 +593,27 @@ a {
   height: auto;
 }
 
+/* Footer section styles*/
+
+.footer__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 
 
+.footer__licence{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.block__text{
+  display: block;
+  text-align: center;
+}
 
 }
