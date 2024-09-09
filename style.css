@@ -566,5 +566,31 @@ a {
   width: 329px;
 }
 
+/* Project section styles */
+
+
+
+
+
+.project__wrappper{
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 32px 27px 48px 28px;
+  gap: 37px;
+}
+
+.project__title .br,
+.project__desc .br{
+  display: none;
+}
+
+
+.project__img img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 
 }
